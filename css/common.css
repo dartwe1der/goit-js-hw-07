@@ -13,25 +13,26 @@ body {
   line-height: 1.5;
 }
 
-.gallery-flex{
+.gallery-flex {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  list-style: none;
+  flex-wrap: wrap;       /* щоб переносились на новий ряд */
+  gap: 30px;             /* відступи між фото */
   padding: 0;
   margin: 0;
+  list-style: none;
+  justify-content: center; /* щоб фото були по центру */
 }
 
-.gallery-item{
-  flex: 1 1 calc(33.333% - 16px);
+.gallery-item {
+  flex: 0 0 calc((100% - 60px) / 3); /* 3 фото в ряд з урахуванням gap */
 }
 
-.gallery-item img{
+.gallery-item img {
   display: block;
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .widget {
