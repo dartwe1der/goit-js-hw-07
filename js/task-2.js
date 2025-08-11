@@ -36,4 +36,4 @@ const markup = images
   `)
   .join("");
 
-gallery.insertAdjacentHTML("beforeend", markup); // одна операція додавання
+gallery.insertAdjacentHTML("beforeend", markup);

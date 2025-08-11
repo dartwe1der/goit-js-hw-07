@@ -15,16 +15,16 @@ body {
 
 .gallery-flex {
   display: flex;
-  flex-wrap: wrap;       /* щоб переносились на новий ряд */
-  gap: 30px;             /* відступи між фото */
+  flex-wrap: wrap;
+  gap: 30px;
   padding: 0;
   margin: 0;
   list-style: none;
-  justify-content: center; /* щоб фото були по центру */
+  justify-content: center;
 }
 
 .gallery-item {
-  flex: 0 0 calc((100% - 60px) / 3); /* 3 фото в ряд з урахуванням gap */
+  flex: 0 0 calc((100% - 60px) / 3);
 }
 
 .gallery-item img {
@@ -75,21 +75,21 @@ body {
   list-style:none;
   padding:0;
   margin:0 auto;
-  max-width: 360px;      /* як на макеті вузька колонка */
+  max-width: 360px;
   display:grid;
   gap:18px;
 }
 
-/* картка категорії */
+
 #categories .item{
-  background:#f3f5ff;                 /* легка блакить */
+  background:#f3f5ff;
   border:1px solid #e7e9f5;
   border-radius:14px;
   padding:16px;
   box-shadow:0 8px 18px rgba(16,24,40,.06);
 }
 
-/* заголовок */
+
 #categories .item > h2{
   margin:0 0 12px;
   font-size:22px;
@@ -97,7 +97,7 @@ body {
   letter-spacing:.2px;
 }
 
-/* внутрішній список */
+
 #categories .item > ul{
   list-style:none;
   padding:0;
@@ -107,7 +107,7 @@ body {
   gap:10px;
 }
 
-/* елементи як інпути */
+
 #categories .item > ul > li{
   background:#fff;
   border:1px solid #cfd5e1;
@@ -118,7 +118,7 @@ body {
   box-shadow: inset 0 0 0 0 rgba(0,0,0,0);
 }
 
-/* дрібний адаптив */
+
 @media (max-width: 380px){
   body{ padding:16px; }
   #categories{ max-width: 100%; }
